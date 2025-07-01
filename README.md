@@ -43,3 +43,18 @@ This portfolio highlights my **skills**, **projects**, **certifications**, and *
 ## 🚀 Deployment
 
 The website is hosted via **GitHub Pages**.
+
+---
+
+## 🧑‍💻 Author
+
+- **Rohit Kumar Saw**  
+- 📧 [rohitku6207@gmail.com](mailto:rohitku6207@gmail.com)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/rohit-kumar-saw6207/)  
+- 💻 [GitHub](https://github.com/Rohitsaw6207)
+
+---
+
+## ⭐ Support
+
+If you like this project, consider starring ⭐ the repository to support and inspire more work!
