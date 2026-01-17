@@ -1,60 +1,79 @@
 'use strict';
 
-// element toggle function
-const elementToggleFunc = function (elem) {
-  elem.classList.toggle("active");
+// Utility toggle
+const elementToggleFunc = (elem) => {
+  if (elem) elem.classList.toggle("active");
 };
 
-// sidebar variables
+// Sidebar
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
-// sidebar toggle
-if (sidebarBtn) {
-  sidebarBtn.addEventListener("click", function () {
+if (sidebar && sidebarBtn) {
+  sidebarBtn.addEventListener("click", () => {
     elementToggleFunc(sidebar);
   });
 }
 
-// testimonials variables
+// Testimonials modal
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
-// modal content variables
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 const modalDate = document.querySelector("[data-modal-date]");
 
-// modal toggle function
-const testimonialsModalFunc = function () {
+const testimonialsModalFunc = () => {
+  if (!modalContainer || !overlay) return;
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
 };
 
-// add click event to testimonials
-for (let i = 0; i < testimonialsItem.length; i++) {
+testimonialsItem.forEach(item => {
+  item.addEventListener("click", () => {
 
-  testimonialsItem[i].addEventListener("click", function () {
+    const avatar = item.querySelector("[data-testimonials-avatar]");
+    const title = item.querySelector("[data-testimonials-title]");
+    const text = item.querySelector("[data-testimonials-text]");
 
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    if (avatar && modalImg) {
+      modalImg.src = avatar.src;
+      modalImg.alt = avatar.alt;
+    }
 
-    modalTitle.innerHTML =
-      this.querySelector("[data-testimonials-title]").innerHTML;
+    if (title && modalTitle) {
+      modalTitle.innerHTML = title.innerHTML;
+    }
 
-    modalText.innerHTML =
-      this.querySelector("[data-testimonials-text]").innerHTML;
+    if (text && modalText) {
+      modalText.innerHTML = text.innerHTML;
+    }
 
-    modalDate.innerHTML =
-      this.dataset.testimonialsDate;
+    if (modalDate) {
+      modalDate.innerHTML = item.dataset.testimonialsDate || "";
+    }
 
     testimonialsModalFunc();
   });
-}
+});
 
-// close modal events
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+if (modalCloseBtn) modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+if (overlay) overlay.addEventListener("click", testimonialsModalFunc);
+
+// Page navigation
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
+
+navigationLinks.forEach((link, index) => {
+  link.addEventListener("click", () => {
+    pages.forEach(page => {
+      page.classList.toggle("active", link.innerHTML.toLowerCase() === page.dataset.page);
+    });
+    navigationLinks.forEach(nav => nav.classList.remove("active"));
+    navigationLinks[index].classList.add("active");
+    window.scrollTo(0, 0);
+  });
+});

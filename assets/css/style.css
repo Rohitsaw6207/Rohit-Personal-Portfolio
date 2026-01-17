@@ -757,7 +757,14 @@ main {
 .clients-item img:hover { filter: grayscale(0); }
 
 
+/*-----------------------------------*\
+  #Custome Added
+\*-----------------------------------*/
 
+.avatar-rounded {
+  border-radius: 25%;
+  object-fit: cover;
+}
 
 
 /*-----------------------------------*\
