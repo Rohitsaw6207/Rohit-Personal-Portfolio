@@ -3,14 +3,6 @@
 \*-----------------------------------*/
 
 
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -874,8 +866,49 @@ main {
   border-radius: inherit;
 }
 
+/**
+ * Added later
+ */
 
+.skills-badges{
+display:flex;
+flex-wrap:wrap;
+gap:14px;
+margin-top:14px;
+}
 
+.skill-badge{
+display:flex;
+align-items:center;
+gap:8px;
+
+padding:8px 14px;
+
+background:var(--eerie-black-1);
+border:1px solid var(--jet);
+
+border-radius:10px;
+
+font-size:14px;
+color:#ffffff;
+
+transition:0.25s ease;
+}
+
+.skill-badge:hover{
+border-color:var(--orange-yellow-crayola);
+background:var(--onyx);
+transform:translateY(-2px);
+}
+
+.skill-badge i{
+font-size:20px;
+}
+
+.skill-svg{
+width:20px;
+height:20px;
+}
 
 
 /*-----------------------------------*\
