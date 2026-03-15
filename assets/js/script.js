@@ -77,3 +77,40 @@ navigationLinks.forEach((link, index) => {
     window.scrollTo(0, 0);
   });
 });
+
+const filterBtns = document.querySelectorAll("[data-filter-btn]");
+const projectItems = document.querySelectorAll("[data-filter-item]");
+
+const filterProjects = (category) => {
+
+  projectItems.forEach(project => {
+
+    const projectCategory = project.dataset.category;
+
+    if (projectCategory === category) {
+      project.classList.add("active");
+    } else {
+      project.classList.remove("active");
+    }
+
+  });
+
+};
+
+filterBtns.forEach(btn => {
+
+  btn.addEventListener("click", function () {
+
+    const selectedCategory = this.innerText.toLowerCase();
+
+    filterBtns.forEach(button => button.classList.remove("active"));
+    this.classList.add("active");
+
+    filterProjects(selectedCategory);
+  });
+
+});
+
+window.addEventListener("load", () => {
+  filterProjects("web development");
+});

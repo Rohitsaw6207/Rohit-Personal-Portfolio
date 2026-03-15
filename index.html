@@ -206,7 +206,6 @@
 
         </ul>
 
-
         </ul>
 
       </div>
@@ -216,17 +215,14 @@
 
 
 
-
     <!--
       - #main-content
     -->
 
     <div class="main-content">
-
       <!--
         - #NAVBAR
       -->
-
       <nav class="navbar">
 
         <ul class="navbar-list">
@@ -361,12 +357,12 @@
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>
-                  Google Cloud Arcade Facilitator
+                  Google Cloud Arcade Program – Participant
                 </h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Participated in the Google Cloud Arcade Facilitator Program, gaining hands-on experience
+                    Participated in the Google Cloud Arcade  Program, gaining hands-on experience
                     with Google Cloud Platform through guided modules, Cloud Labs, and Skill Badge-based learning.
                   </p>
                 </div>
@@ -736,262 +732,183 @@
 
 
       <!-- #PORTFOLIO -->
-      <article class="portfolio" data-page="portfolio">
+<!-- #PORTFOLIO -->
+<article class="portfolio" data-page="portfolio">
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
 
+  <section class="about-text">
+    <p style="word-spacing: 2px; font-weight: bold;">
+      I have showcased only a selection of my projects here. To explore my all projects, including web development
+      and projects from other domains, visit my project site by clicking the button below.
+    </p>
 
-        <section class="about-text">
-          <p style="word-spacing: 2px; font-weight: bold;">
-            I have showcased only a selection of my projects here. To explore my all projects, including web development
-            and projects from other domains, visit my project site by clicking the button below.
-          </p>
+    <a href="https://rohit-project-showcase-site.vercel.app/" target="_blank" class="btn"
+      style="display: flex; align-items: center; gap: 10px; margin-top: 10px; font-weight: bold; width: fit-content;">
+      <h3 class="h3" style="color: hsl(45, 100%, 72%);">View Projects</h3>
+      <ion-icon name="open-outline" class="h3" style="color: hsl(45, 100%, 72%); font-size: 22px;"></ion-icon>
+    </a>
+  </section>
 
-          <a href="https://rohit-project-showcase-site.vercel.app/" target="_blank" class="btn" style="display: flex; align-items: center; gap: 10px; margin-top: 10px;
-              font-weight: bold; width: fit-content;">
-            <h3 class="h3" style="color: hsl(45, 100%, 72%);">View Projects</h3>
-            <ion-icon name="open-outline" class="h3" style="color: hsl(45, 100%, 72%); font-size: 22px;"></ion-icon>
-          </a>
-        </section>
+  <section class="projects">
 
+    <!-- Filter Buttons -->
+    <ul class="filter-list">
+      <li class="filter-item"><button class="active" data-filter-btn>Web development</button></li>
+      <li class="filter-item"><button data-filter-btn>Applications</button></li>
+      <li class="filter-item"><button data-filter-btn>Data Analysis</button></li>
+    </ul>
 
-        <section class="projects">
+    <!-- Dropdown Filter -->
+    <div class="filter-select-box">
+      <button class="filter-select" data-select>
+        <div class="select-value" data-selecct-value>Web development</div>
+        <div class="select-icon">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+      </button>
 
-          <!-- Filter Buttons -->
-          <ul class="filter-list">
-            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
-            <li class="filter-item"><button data-filter-btn>Web development</button></li>
-            <li class="filter-item"><button data-filter-btn>Applications</button></li>
-            <li class="filter-item"><button data-filter-btn>Data Analysis</button></li>
-          </ul>
+      <ul class="select-list">
+        <li class="select-item"><button data-select-item>Web development</button></li>
+        <li class="select-item"><button data-select-item>Applications</button></li>
+        <li class="select-item"><button data-select-item>Data Analysis</button></li>
+      </ul>
+    </div>
 
-          <!-- Dropdown Filter -->
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Select category</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-            <ul class="select-list">
-              <li class="select-item"><button data-select-item>All</button></li>
-              <li class="select-item"><button data-select-item>Web development</button></li>
-              <li class="select-item"><button data-select-item>Applications</button></li>
-              <li class="select-item"><button data-select-item>Data Analysis</button></li>
-            </ul>
-          </div>
+    <!-- Project List -->
+    <ul class="project-list">
 
-          <!-- Project List (Sorted) -->
-          <ul class="project-list">
-            <!-- Web Development Projects -->
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://github.com/Rohitsaw6207/Hitro_Aii" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/1044.png" alt="hitro-ai" loading="lazy">
-                </figure>
-                <h3 class="project-title">Hitro Ai</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+      <!-- DevRo AI -->
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://devro-ai.vercel.app/" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/Project-30.png" alt="DevRo AI" loading="lazy">
+          </figure>
+          <h3 class="project-title">DevRo AI</h3>
+          <p class="project-category">Web development</p>
+        </a>
+      </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://hitro-chat.onrender.com" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/1043.png" alt="hitro-chat" loading="lazy">
-                </figure>
-                <h3 class="project-title">Hitro Chat</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+      <!-- Web Development Projects -->
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://www.onlinegamehub.in/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/1003.png" alt="Online Game Hub" loading="lazy">
-                </figure>
-                <h3 class="project-title">Online Game Hub</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://github.com/Rohitsaw6207/Hitro_Aii" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/1044.png" alt="hitro-ai" loading="lazy">
+          </figure>
+          <h3 class="project-title">Hitro Ai</h3>
+          <p class="project-category">Web development</p>
+        </a>
+      </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://hitzchat.onrender.com/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/hitzchat.onrender.com_settings (1).png" alt="HitzChat" loading="lazy">
-                </figure>
-                <h3 class="project-title">HitzChat</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://hitro-chat.onrender.com" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/1043.png" alt="hitro-chat" loading="lazy">
+          </figure>
+          <h3 class="project-title">Hitro Chat</h3>
+          <p class="project-category">Web development</p>
+        </a>
+      </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://www.pragati2025.site/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/Project-025.png" alt="Pragati 2025" loading="lazy">
-                </figure>
-                <h3 class="project-title">College Technical Fest Website</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://www.onlinegamehub.in/" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/1003.png" alt="Online Game Hub" loading="lazy">
+          </figure>
+          <h3 class="project-title">Online Game Hub</h3>
+          <p class="project-category">Web development</p>
+        </a>
+      </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://react-spotify-clone-eight.vercel.app/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/1009.png" alt="Spotify Clone" loading="lazy">
-                </figure>
-                <h3 class="project-title">Spotify Clone</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://hitzchat.onrender.com/" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/hitzchat.onrender.com_settings (1).png" alt="HitzChat" loading="lazy">
+          </figure>
+          <h3 class="project-title">HitzChat</h3>
+          <p class="project-category">Web development</p>
+        </a>
+      </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://netflix-clone-react-app-one.vercel.app/login" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/Netflix-New-Feature-Audio-Only_1200x768.jpg" alt="Netflix Clone"
-                    loading="lazy">
-                </figure>
-                <h3 class="project-title">Netflix Clone</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://www.pragati2025.site/" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/Project-025.png" alt="Pragati 2025" loading="lazy">
+          </figure>
+          <h3 class="project-title">College Technical Fest Website</h3>
+          <p class="project-category">Web development</p>
+        </a>
+      </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://rohit-project-showcase-site.vercel.app/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/download (2).png" alt="Project Showcase Site" loading="lazy">
-                </figure>
-                <h3 class="project-title">Project Showcase Site</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://react-spotify-clone-eight.vercel.app/" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/1009.png" alt="Spotify Clone" loading="lazy">
+          </figure>
+          <h3 class="project-title">Spotify Clone</h3>
+          <p class="project-category">Web development</p>
+        </a>
+      </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://rohitsaw6207.github.io/Weather/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/Project-007.png" alt="Weather App" loading="lazy">
-                </figure>
-                <h3 class="project-title">Weather App</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://netflix-clone-react-app-one.vercel.app/login" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/Netflix-New-Feature-Audio-Only_1200x768.jpg" alt="Netflix Clone" loading="lazy">
+          </figure>
+          <h3 class="project-title">Netflix Clone</h3>
+          <p class="project-category">Web development</p>
+        </a>
+      </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://rohitsaw6207.github.io/Pokedex-/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/Project-013.png" alt="Pokedex" loading="lazy">
-                </figure>
-                <h3 class="project-title">Pokédex</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+      <li class="project-item active" data-filter-item data-category="web development">
+        <a href="https://rohit-project-showcase-site.vercel.app/" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/download (2).png" alt="Project Showcase Site" loading="lazy">
+          </figure>
+          <h3 class="project-title">Project Showcase Site</h3>
+          <p class="project-category">Web development</p>
+        </a>
+      </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="https://rohitsaw6207.github.io/Calculator/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/Project-006.png" alt="Calculator" loading="lazy">
-                </figure>
-                <h3 class="project-title">Calculator</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
+      <!-- Data Analysis -->
+      <li class="project-item active" data-filter-item data-category="data analysis">
+        <a href="https://github.com/Rohitsaw6207/Data-Analysis/tree/main/Excel%20Dashboard" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="logo-github"></ion-icon></div>
+            <img src="./assets/images/Project-026.png" alt="Excel Dashboard" loading="lazy">
+          </figure>
+          <h3 class="project-title">Excel Dashboard</h3>
+          <p class="project-category">Data Analysis</p>
+        </a>
+      </li>
 
-            <!-- Applications Projects -->
-            <!-- <li class="project-item active" data-filter-item data-category="applications">
-              <a href="https://github.com/Rohitsaw6207/Android-Development/tree/main/Calculator%20App" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="logo-github"></ion-icon></div>
-                  <img src="./assets/images/Project-006.png" alt="Calculator App" loading="lazy">
-                </figure>
-                <h3 class="project-title">Calculator (Android)</h3>
-                <p class="project-category">Applications</p>
-              </a>
-            </li>
+      <li class="project-item active" data-filter-item data-category="data analysis">
+        <a href="https://github.com/Rohitsaw6207/Data-Analysis/tree/main/PowerBI%20Dashboard" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="logo-github"></ion-icon></div>
+            <img src="./assets/images/pbiximage1.png" alt="Power BI Dashboard" loading="lazy">
+          </figure>
+          <h3 class="project-title">Power BI Dashboard</h3>
+          <p class="project-category">Data Analysis</p>
+        </a>
+      </li>
 
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="https://github.com/Rohitsaw6207/Android-Development/tree/main/HitzChat" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="logo-github"></ion-icon></div>
-                  <img src="./assets/images/hitzchat.onrender.com_settings (1).png" alt="HitzChat App" loading="lazy">
-                </figure>
-                <h3 class="project-title">HitzChat (Android)</h3>
-                <p class="project-category">Applications</p>
-              </a>
-            </li>
+    </ul>
 
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="https://github.com/Rohitsaw6207/Android-Development/tree/main/OnlineGameHub" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="logo-github"></ion-icon></div>
-                  <img src="./assets/images/1003.png" alt="Online Game Hub App" loading="lazy">
-                </figure>
-                <h3 class="project-title">Online Game Hub (Android)</h3>
-                <p class="project-category">Applications</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="https://github.com/Rohitsaw6207/Android-Development/tree/main/Unit%20Converter%20App"
-                target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="logo-github"></ion-icon></div>
-                  <img src="./assets/images/1006.jpg" alt="Unit Converter App" loading="lazy">
-                </figure>
-                <h3 class="project-title">Unit Converter (Android)</h3>
-                <p class="project-category">Applications</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="https://github.com/Rohitsaw6207/Android-Development/tree/main/Weather%20App" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="logo-github"></ion-icon></div>
-                  <img src="./assets/images/Project-007.png" alt="Weather App" loading="lazy">
-                </figure>
-                <h3 class="project-title">Weather App (Android)</h3>
-                <p class="project-category">Applications</p>
-              </a>
-            </li> -->
-
-            <!-- Data Analysis Projects -->
-            <li class="project-item active" data-filter-item data-category="data analysis">
-              <a href="https://github.com/Rohitsaw6207/Data-Analysis/tree/main/Excel%20Dashboard" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="logo-github"></ion-icon></div>
-                  <img src="./assets/images/Project-026.png" alt="Excel Dashboard" loading="lazy">
-                </figure>
-                <h3 class="project-title">Excel Dashboard</h3>
-                <p class="project-category">Data Analysis</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="data analysis">
-              <a href="https://github.com/Rohitsaw6207/Data-Analysis/tree/main/PowerBI%20Dashboard" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box"><ion-icon name="logo-github"></ion-icon></div>
-                  <img src="./assets/images/pbiximage1.png" alt="Power BI Dashboard" loading="lazy">
-                </figure>
-                <h3 class="project-title">Power BI Dashboard</h3>
-                <p class="project-category">Data Analysis</p>
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-      </article>
+  </section>
+</article>
 
 
       <!--
