@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website!  
 This portfolio highlights my **skills**, **projects**, **certifications**, and **resume** with a clean, modern, and responsive design.
 
-🌐 **Live Site:** [https://rohitsaw6207.github.io/Rohit-Personal-Portfolio/](https://rohitsaw6207.github.io/Rohit-Personal-Portfolio/)
+🌐 **Live Site:** [https://rohitsaw6207.github.io/Rohit-Personal-Portfolio/](https://rohitsaw6207.github.io/Rohit-Personal-Portfolio/) </br>
 🌐 **Live Site:** [https://rohitsaw6207.vercel.app/](https://rohitsaw6207.vercel.app/)
 
 ---
